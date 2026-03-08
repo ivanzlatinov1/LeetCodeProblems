@@ -6,3 +6,6 @@
 
 // 17. *Letter Combinations of a Phone Number*
 // Console.WriteLine('[' + string.Join(", ", Problem17.LetterCombinations("23")) + ']');
+
+// 1980. *Find Unique Binary String*
+//Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
