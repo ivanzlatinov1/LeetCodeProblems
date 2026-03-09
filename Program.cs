@@ -9,3 +9,6 @@
 
 // 1980. *Find Unique Binary String*
 //Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
+
+// 3129. *Find All Possible Stable Binary Arrays I* (using memoization)
+// Console.WriteLine(Problem3129.NumberOfStableArrays(3, 3, 2));
