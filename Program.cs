@@ -12,3 +12,6 @@
 
 // 3129. *Find All Possible Stable Binary Arrays I* (using memoization)
 // Console.WriteLine(Problem3129.NumberOfStableArrays(3, 3, 2));
+
+// 1009. *Complement of Base 10 Integer*
+// Console.WriteLine(Problem1009.BitwiseComplement(5));
