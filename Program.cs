@@ -15,3 +15,6 @@
 
 // 1009. *Complement of Base 10 Integer*
 // Console.WriteLine(Problem1009.BitwiseComplement(5));
+
+// 3296. *Minimum Number of Seconds to Make Mountain Height Zero*
+// Console.WriteLine(Problem3296.MinNumberOfSeconds(4, [2, 1, 1]));
