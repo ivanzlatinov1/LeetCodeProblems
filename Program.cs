@@ -18,3 +18,6 @@
 
 // 3296. *Minimum Number of Seconds to Make Mountain Height Zero*
 // Console.WriteLine(Problem3296.MinNumberOfSeconds(4, [2, 1, 1]));
+
+// 1415. *The k-th Lexicographical String of All Happy Strings of Length n*
+// Console.WriteLine(Problem1415.GetHappyString(1, 3));
