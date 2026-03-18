@@ -21,3 +21,6 @@
 
 // 1415. *The k-th Lexicographical String of All Happy Strings of Length n*
 // Console.WriteLine(Problem1415.GetHappyString(1, 3));
+
+// 3070. *Count Submatrices with Top-Left Element and Sum Less Than k*
+// Console.WriteLine(Problem3070.CountSubmatrices([[7, 6, 3], [6, 6, 1]], 18));
