@@ -24,3 +24,6 @@
 
 // 3070. *Count Submatrices with Top-Left Element and Sum Less Than k*
 // Console.WriteLine(Problem3070.CountSubmatrices([[7, 6, 3], [6, 6, 1]], 18));
+
+// 3643. *Flip Square Submatrix Vertically*
+// Console.WriteLine(Problem3643.ReverseSubmatrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 1, 0, 3));
