@@ -30,3 +30,6 @@
 
 // 1886. *Determine Whether Matrix Can Be Obtained By Rotation*
 // Console.WriteLine(Problem1886.FindRotation([[0, 0, 0], [0, 1, 0], [1, 1, 1]], [[1, 1, 1], [0, 1, 0], [0, 0, 0]]));
+
+// 1594. *Maximum Non Negative Product in a Matrix*
+// Console.WriteLine(Problem1594.MaxProductPath([[1, -2, 1], [1, -2, 1], [3, -4, 1]]));
