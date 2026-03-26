@@ -33,3 +33,6 @@
 
 // 1594. *Maximum Non Negative Product in a Matrix*
 // Console.WriteLine(Problem1594.MaxProductPath([[1, -2, 1], [1, -2, 1], [3, -4, 1]]));
+
+// 66. *Plus One*
+// Console.WriteLine(Problem66.PlusOne([9, 8, 9]));
