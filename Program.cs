@@ -36,3 +36,6 @@
 
 // 66. *Plus One*
 // Console.WriteLine(Problem66.PlusOne([9, 8, 9]));
+
+// 2946. *Matrix Similarity After Cyclic Shifts*
+// Console.WriteLine(Problem2946.AreSimilar([[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2));
