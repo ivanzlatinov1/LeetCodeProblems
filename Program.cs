@@ -39,3 +39,6 @@
 
 // 2946. *Matrix Similarity After Cyclic Shifts*
 // Console.WriteLine(Problem2946.AreSimilar([[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2));
+
+// 2839. *Check if Strings Can be Made Equal With Operations I*
+// Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
