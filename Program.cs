@@ -42,3 +42,6 @@
 
 // 2839. *Check if Strings Can be Made Equal With Operations I*
 // Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
+
+// 3418. *Maximum Amount of Money Robot Can Earn*
+// Console.WriteLine(Problem3418.MaximumAmount([[0, 1, -1], [1, -2, 3], [2, -3, 4]]));
