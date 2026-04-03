@@ -1,47 +1,102 @@
-﻿// 1758. *Minimum Changes To Make Alternating Binary String*
-// Console.WriteLine(Problem1758.MinOperations("1111"));
+﻿// Welcome!
+// This repository contains my solutions to various LeetCode problems I have worked through.
+// For full problem descriptions and additional details, please refer to the official LeetCode problem page.
 
-// 1784. *Check if Binary String Has at Most One Segment of Ones*
-// Console.WriteLine((Problem1784.CheckOnesSegment("1001")));
+while (true)
+{
+    Console.WriteLine("\nEnter a problem number (0 to exit, 'ls' to list problems):");
+    string input = Console.ReadLine()!;
 
-// 17. *Letter Combinations of a Phone Number*
-// Console.WriteLine('[' + string.Join(", ", Problem17.LetterCombinations("23")) + ']');
+    if (input == "0")
+        break;
 
-// 1980. *Find Unique Binary String*
-//Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
+    if (input.Equals("ls", StringComparison.CurrentCultureIgnoreCase))
+    {
+        Display.Problems();
+        continue;
+    }
 
-// 3129. *Find All Possible Stable Binary Arrays I* (using memoization)
-// Console.WriteLine(Problem3129.NumberOfStableArrays(3, 3, 2));
+    if (!int.TryParse(input, out int problem))
+    {
+        Console.WriteLine("Invalid input! Please enter a number or 'ls'.");
+        continue;
+    }
 
-// 1009. *Complement of Base 10 Integer*
-// Console.WriteLine(Problem1009.BitwiseComplement(5));
+    switch (problem)
+    {
+        case 17:
+            Console.WriteLine("[" + string.Join(", ", Problem17.LetterCombinations("23")) + "]");
+            break;
 
-// 3296. *Minimum Number of Seconds to Make Mountain Height Zero*
-// Console.WriteLine(Problem3296.MinNumberOfSeconds(4, [2, 1, 1]));
+        case 66:
+            Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
+            break;
 
-// 1415. *The k-th Lexicographical String of All Happy Strings of Length n*
-// Console.WriteLine(Problem1415.GetHappyString(1, 3));
+        case 1009:
+            Console.WriteLine(Problem1009.BitwiseComplement(5));
+            break;
 
-// 3070. *Count Submatrices with Top-Left Element and Sum Less Than k*
-// Console.WriteLine(Problem3070.CountSubmatrices([[7, 6, 3], [6, 6, 1]], 18));
+        case 1415:
+            Console.WriteLine(Problem1415.GetHappyString(1, 3));
+            break;
 
-// 3643. *Flip Square Submatrix Vertically*
-// Console.WriteLine(Problem3643.ReverseSubmatrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 1, 0, 3));
+        case 1594:
+            Console.WriteLine(Problem1594.MaxProductPath([[1, -2, 1], [1, -2, 1], [3, -4, 1]]));
+            break;
 
-// 1886. *Determine Whether Matrix Can Be Obtained By Rotation*
-// Console.WriteLine(Problem1886.FindRotation([[0, 0, 0], [0, 1, 0], [1, 1, 1]], [[1, 1, 1], [0, 1, 0], [0, 0, 0]]));
+        case 1758:
+            Console.WriteLine(Problem1758.MinOperations("1111"));
+            break;
 
-// 1594. *Maximum Non Negative Product in a Matrix*
-// Console.WriteLine(Problem1594.MaxProductPath([[1, -2, 1], [1, -2, 1], [3, -4, 1]]));
+        case 1784:
+            Console.WriteLine(Problem1784.CheckOnesSegment("1001"));
+            break;
 
-// 66. *Plus One*
-// Console.WriteLine(Problem66.PlusOne([9, 8, 9]));
+        case 1886:
+            Console.WriteLine(Problem1886.FindRotation(
+                [[0, 0, 0], [0, 1, 0], [1, 1, 1]],
+                [[1, 1, 1], [0, 1, 0], [0, 0, 0]]
+            ));
+            break;
 
-// 2946. *Matrix Similarity After Cyclic Shifts*
-// Console.WriteLine(Problem2946.AreSimilar([[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2));
+        case 1980:
+            Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
+            break;
 
-// 2839. *Check if Strings Can be Made Equal With Operations I*
-// Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
+        case 2839:
+            Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
+            break;
 
-// 3418. *Maximum Amount of Money Robot Can Earn*
-// Console.WriteLine(Problem3418.MaximumAmount([[0, 1, -1], [1, -2, 3], [2, -3, 4]]));
+        case 2946:
+            Console.WriteLine(Problem2946.AreSimilar(
+                [[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2));
+            break;
+
+        case 3070:
+            Console.WriteLine(Problem3070.CountSubmatrices(
+                [[7, 6, 3], [6, 6, 1]], 18));
+            break;
+
+        case 3129:
+            Console.WriteLine(Problem3129.NumberOfStableArrays(3, 3, 2));
+            break;
+
+        case 3296:
+            Console.WriteLine(Problem3296.MinNumberOfSeconds(4, [2, 1, 1]));
+            break;
+
+        case 3418:
+            Console.WriteLine(Problem3418.MaximumAmount(
+                [[0, 1, -1], [1, -2, 3], [2, -3, 4]]));
+            break;
+
+        case 3643:
+            Console.WriteLine(Problem3643.ReverseSubmatrix(
+                [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 1, 0, 3));
+            break;
+
+        default:
+            Console.WriteLine("Invalid choice!");
+            break;
+    }
+}
