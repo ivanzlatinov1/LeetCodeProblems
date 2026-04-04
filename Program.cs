@@ -63,6 +63,10 @@ while (true)
             Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
             break;
 
+        case 2075:
+            Console.WriteLine(Problem2075.DecodeCiphertext("iveo    eed   l te   olc", 4));
+            break;
+
         case 2839:
             Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
             break;
