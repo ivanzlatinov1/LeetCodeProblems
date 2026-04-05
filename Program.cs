@@ -32,6 +32,10 @@ while (true)
             Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
             break;
 
+        case 657:
+            Console.WriteLine(Problem657.JudgeCircle("UDUD"));
+            break;
+
         case 1009:
             Console.WriteLine(Problem1009.BitwiseComplement(5));
             break;
