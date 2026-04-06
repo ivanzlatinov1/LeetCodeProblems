@@ -36,6 +36,10 @@ while (true)
             Console.WriteLine(Problem657.JudgeCircle("UDUD"));
             break;
 
+        case 874:
+            Console.WriteLine(Problem874.RobotSim([4, -1, 4, -2, 4], [[2, 4]]));
+            break;
+
         case 1009:
             Console.WriteLine(Problem1009.BitwiseComplement(5));
             break;
