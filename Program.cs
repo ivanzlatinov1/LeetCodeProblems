@@ -75,6 +75,10 @@ while (true)
             Console.WriteLine(Problem2075.DecodeCiphertext("iveo    eed   l te   olc", 4));
             break;
 
+        case 2515:
+            Console.WriteLine(Problem2515.ClosestTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1));
+            break;
+
         case 2839:
             Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
             break;
