@@ -60,6 +60,10 @@ while (true)
             Console.WriteLine(Problem1784.CheckOnesSegment("1001"));
             break;
 
+        case 1855:
+            Console.WriteLine(Problem1855.MaxDistance([55, 30, 5, 4, 2], [100, 20, 10, 10, 5]));
+            break;
+
         case 1886:
             Console.WriteLine(Problem1886.FindRotation(
                 [[0, 0, 0], [0, 1, 0], [1, 1, 1]],
