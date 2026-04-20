@@ -79,6 +79,10 @@ while (true)
             Console.WriteLine(Problem2075.DecodeCiphertext("iveo    eed   l te   olc", 4));
             break;
 
+        case 2078:
+            Console.WriteLine(Problem2078.MaxDistance([1, 1, 1, 6, 1, 1, 1]));
+            break;
+
         case 2515:
             Console.WriteLine(Problem2515.ClosestTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1));
             break;
