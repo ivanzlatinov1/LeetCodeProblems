@@ -83,6 +83,10 @@ while (true)
             Console.WriteLine(Problem2078.MaxDistance([1, 1, 1, 6, 1, 1, 1]));
             break;
 
+        case 2452:
+            Console.WriteLine(string.Join(" ", Problem2452.TwoEditWords(["word", "note", "ants", "wood"], ["wood", "joke", "moat"])));
+            break;
+
         case 2515:
             Console.WriteLine(Problem2515.ClosestTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1));
             break;
