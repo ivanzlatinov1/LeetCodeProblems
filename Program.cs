@@ -91,6 +91,10 @@ while (true)
             Console.WriteLine(Problem2515.ClosestTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1));
             break;
 
+        case 2615:
+            Console.WriteLine(Problem2615.Distance([1, 3, 1, 1, 2]));
+            break;
+
         case 2839:
             Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
             break;
