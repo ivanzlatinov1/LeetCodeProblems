@@ -95,6 +95,10 @@ while (true)
             Console.WriteLine(Problem2615.Distance([1, 3, 1, 1, 2]));
             break;
 
+        case 2833:
+            Console.WriteLine(Problem2833.FurthestDistanceFromOrigin("_R__LL_"));
+            break;
+
         case 2839:
             Console.WriteLine(Problem2839.CanBeEqual("abcd", "cdab"));
             break;
