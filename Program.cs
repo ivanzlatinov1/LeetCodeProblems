@@ -48,6 +48,10 @@ while (true)
             Console.WriteLine(Problem1415.GetHappyString(1, 3));
             break;
 
+        case 1559:
+            Console.WriteLine(Problem1559.ContainsCycle([['a', 'a', 'a', 'a'], ['a', 'b', 'b', 'a'], ['a', 'b', 'b', 'a'], ['a', 'a', 'a', 'a']]));
+            break;
+
         case 1594:
             Console.WriteLine(Problem1594.MaxProductPath([[1, -2, 1], [1, -2, 1], [3, -4, 1]]));
             break;
