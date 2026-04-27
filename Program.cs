@@ -44,6 +44,10 @@ while (true)
             Console.WriteLine(Problem1009.BitwiseComplement(5));
             break;
 
+        case 1391:
+            Console.WriteLine(Problem1391.HasValidPath([[2, 4, 3], [6, 5, 2]]));
+            break;
+
         case 1415:
             Console.WriteLine(Problem1415.GetHappyString(1, 3));
             break;
