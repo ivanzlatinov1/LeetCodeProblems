@@ -91,6 +91,10 @@ while (true)
             Console.WriteLine(Problem2078.MaxDistance([1, 1, 1, 6, 1, 1, 1]));
             break;
 
+        case 2033:
+            Console.WriteLine(Problem2033.MinOperations([[2, 4], [6, 8]], 2));
+            break;
+
         case 2452:
             Console.WriteLine(string.Join(" ", Problem2452.TwoEditWords(["word", "note", "ants", "wood"], ["wood", "joke", "moat"])));
             break;
