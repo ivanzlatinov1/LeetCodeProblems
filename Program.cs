@@ -147,6 +147,10 @@ while (true)
             Console.WriteLine(Problem3740.MinimumDistance([2, 6, 2, 6, 2, 6, 2, 2, 2]));
             break;
 
+        case 3742:
+            Console.WriteLine(Problem3742.MaxPathScore([[0, 1], [2, 0]], 1));
+            break;
+
         case 3761:
             Console.WriteLine(Problem3761.MinMirrorPairDistance([12, 34, 46, 21, 12]));
             break;
