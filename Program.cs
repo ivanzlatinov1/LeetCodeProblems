@@ -32,6 +32,10 @@ while (true)
             Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
             break;
 
+        case 396:
+            Console.WriteLine(Problem396.MaxRotateFunction([4, 3, 2, 6]));
+            break;
+
         case 657:
             Console.WriteLine(Problem657.JudgeCircle("UDUD"));
             break;
