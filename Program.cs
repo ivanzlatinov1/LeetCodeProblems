@@ -40,6 +40,10 @@ while (true)
             Console.WriteLine(Problem657.JudgeCircle("UDUD"));
             break;
 
+        case 788:
+            Console.WriteLine(Problem788.RotatedDigits(10));
+            break;
+
         case 874:
             Console.WriteLine(Problem874.RobotSim([4, -1, 4, -2, 4], [[2, 4]]));
             break;
