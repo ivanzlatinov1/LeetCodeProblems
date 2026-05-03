@@ -44,6 +44,10 @@ while (true)
             Console.WriteLine(Problem788.RotatedDigits(10));
             break;
 
+        case 796:
+            Console.WriteLine(Problem796.RotateString("abcde", "cdeab"));
+            break;
+
         case 874:
             Console.WriteLine(Problem874.RobotSim([4, -1, 4, -2, 4], [[2, 4]]));
             break;
