@@ -28,6 +28,10 @@ while (true)
             Console.WriteLine("[" + string.Join(", ", Problem17.LetterCombinations("23")) + "]");
             break;
 
+        case 48:
+            Problem48.Rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+            break;
+
         case 66:
             Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
             break;
