@@ -32,6 +32,12 @@ while (true)
             Problem48.Rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
             break;
 
+        case 61:
+            Problem61.ListNode head = new(1, new(2, new(3, new(4, new(5)))));
+            Problem61.ListNode? rotatedList = Problem61.RotateRight(head, 2);
+            Problem61.PrintList(rotatedList);
+            break;
+
         case 66:
             Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
             break;
