@@ -1,25 +1,45 @@
-public static class Display
+public static partial class Display
 {
     public static void Problems()
     {
-        string[] directories = Directory.GetDirectories(".");
+        string[] topDirectories = Directory.GetDirectories(".");
 
-        var sortedDirs = directories
-            .Select(dir => new
+        var problems = topDirectories
+            .Select(dir => Path.GetFileName(dir))
+            .Where(name => !string.IsNullOrWhiteSpace(name) && IsRangeFolder(name))
+            .SelectMany(rangeFolder => Directory.GetDirectories(rangeFolder)
+                .Select(dir => Path.GetFileName(dir))
+                .Where(name =>
+                    !string.IsNullOrWhiteSpace(name) &&
+                    ProblemDirectoryRegex().IsMatch(name)))
+            .Select(name =>
             {
-                Name = Path.GetFileName(dir),
-                Number = GetProblemLeadingNumber(Path.GetFileName(dir))
+                int splitIndex = name.IndexOf('.');
+                int number = int.Parse(name[..splitIndex]);
+                string title = name[(splitIndex + 1)..].Trim();
+
+                return new { Number = number, Title = title };
             })
-            .Where(x => x.Name != "bin" && x.Name != "obj" && x.Name != ".git")
-            .OrderBy(x => x.Number);
+            .OrderBy(x => x.Number)
+            .ToList();
 
-        foreach (var dir in sortedDirs)
-            Console.WriteLine(dir.Name);
+        Console.WriteLine("\nPROBLEMS");
+        Console.WriteLine(new string('-', 60));
+
+        foreach (var p in problems)
+        {
+            Console.WriteLine($"{p.Number,5}. {p.Title}");
+        }
+
+        Console.WriteLine(new string('-', 60));
+        Console.WriteLine($"Total: {problems.Count}");
     }
 
-    private static int GetProblemLeadingNumber(string name)
-    {
-        string numberPart = new([.. name.TakeWhile(char.IsDigit)]);
-        return int.TryParse(numberPart, out int result) ? result : int.MaxValue;
-    }
+    private static bool IsRangeFolder(string name) => RangeFolderRegex().IsMatch(name);
+
+    [System.Text.RegularExpressions.GeneratedRegex(@"^\d+-\d+$")]
+    private static partial System.Text.RegularExpressions.Regex RangeFolderRegex();
+
+    [System.Text.RegularExpressions.GeneratedRegex(@"^\d+\.\s")]
+    private static partial System.Text.RegularExpressions.Regex ProblemDirectoryRegex();
 }
