@@ -46,6 +46,10 @@ while (true)
             Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
             break;
 
+        case 136:
+            Console.WriteLine(Problem136.SingleNumber([4, 1, 2, 1, 2]));
+            break;
+
         case 202:
             Console.WriteLine(Problem202.IsHappy(19));
             break;
