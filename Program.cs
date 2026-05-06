@@ -46,6 +46,10 @@ while (true)
             Console.WriteLine(string.Join(", ", Problem66.PlusOne([9, 8, 9])));
             break;
 
+        case 202:
+            Console.WriteLine(Problem202.IsHappy(19));
+            break;
+
         case 396:
             Console.WriteLine(Problem396.MaxRotateFunction([4, 3, 2, 6]));
             break;
