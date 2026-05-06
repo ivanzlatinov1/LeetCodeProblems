@@ -2,22 +2,12 @@ public static partial class Display
 {
     public static void Problems()
     {
-        string[] topDirectories = Directory.GetDirectories(".");
-
-        var problems = topDirectories
-            .Select(dir => Path.GetFileName(dir))
-            .Where(name => !string.IsNullOrWhiteSpace(name) && IsRangeFolder(name))
-            .SelectMany(rangeFolder => Directory.GetDirectories(rangeFolder)
-                .Select(dir => Path.GetFileName(dir))
-                .Where(name =>
-                    !string.IsNullOrWhiteSpace(name) &&
-                    ProblemDirectoryRegex().IsMatch(name)))
+        var problems = GetProblemFoldersRecursive()
             .Select(name =>
             {
                 int splitIndex = name.IndexOf('.');
-                int number = int.Parse(name[..splitIndex]);
-                string title = name[(splitIndex + 1)..].Trim();
-
+                var number = int.Parse(name[..splitIndex]);
+                var title = name[(splitIndex + 1)..].Trim();
                 return new { Number = number, Title = title };
             })
             .OrderBy(x => x.Number)
@@ -26,13 +16,25 @@ public static partial class Display
         Console.WriteLine("\nPROBLEMS");
         Console.WriteLine(new string('-', 60));
 
-        foreach (var p in problems)
-        {
-            Console.WriteLine($"{p.Number,5}. {p.Title}");
-        }
+        foreach (var problem in problems)
+            Console.WriteLine($"{problem.Number,5}.  {problem.Title}");
 
         Console.WriteLine(new string('-', 60));
         Console.WriteLine($"Total: {problems.Count}");
+    }
+
+    private static IEnumerable<string> GetProblemFoldersRecursive(string path = "./")
+    {
+        foreach (var dir in Directory.GetDirectories(path))
+        {
+            var name = Path.GetFileName(dir)!;
+
+            if (ProblemDirectoryRegex().IsMatch(name))
+                yield return name;
+            else if (IsRangeFolder(name))
+                foreach (var problem in GetProblemFoldersRecursive(dir))
+                    yield return problem;
+        }
     }
 
     private static bool IsRangeFolder(string name) => RangeFolderRegex().IsMatch(name);
