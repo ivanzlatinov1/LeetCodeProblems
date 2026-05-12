@@ -94,6 +94,10 @@ while (true)
             Console.WriteLine(Problem1594.MaxProductPath([[1, -2, 1], [1, -2, 1], [3, -4, 1]]));
             break;
 
+        case 1665:
+            Console.WriteLine(Problem1665.MinimumEffort([[1, 3], [2, 4], [10, 11], [10, 12], [8, 9]]));
+            break;
+
         case 1758:
             Console.WriteLine(Problem1758.MinOperations("1111"));
             break;
