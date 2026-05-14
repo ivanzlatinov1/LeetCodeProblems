@@ -153,6 +153,10 @@ while (true)
             Console.WriteLine(Problem2770.MaximumJumps([1, 3, 6, 4, 1, 2], 2));
             break;
 
+        case 2784:
+            Console.WriteLine(Problem2784.IsGood([1, 3, 3, 2]));
+            break;
+
         case 2833:
             Console.WriteLine(Problem2833.FurthestDistanceFromOrigin("_R__LL_"));
             break;
