@@ -50,6 +50,10 @@ while (true)
             Console.WriteLine(Problem136.SingleNumber([4, 1, 2, 1, 2]));
             break;
 
+        case 153:
+            Console.WriteLine(Problem153.FindMin([3, 4, 5, 1, 2]));
+            break;
+
         case 202:
             Console.WriteLine(Problem202.IsHappy(19));
             break;
