@@ -82,6 +82,10 @@ while (true)
             Console.WriteLine(Problem1009.BitwiseComplement(5));
             break;
 
+        case 1306:
+            Console.WriteLine(Problem1306.CanReach([4, 2, 3, 0, 3, 1, 2], 5));
+            break;
+
         case 1391:
             Console.WriteLine(Problem1391.HasValidPath([[2, 4, 3], [6, 5, 2]]));
             break;
