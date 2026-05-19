@@ -153,6 +153,10 @@ while (true)
             Console.WriteLine(Problem2515.ClosestTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1));
             break;
 
+        case 2540:
+            Console.WriteLine(Problem2540.GetCommon([1, 2, 3], [2, 4]));
+            break;
+
         case 2615:
             Console.WriteLine(Problem2615.Distance([1, 3, 1, 1, 2]));
             break;
