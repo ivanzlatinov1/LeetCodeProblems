@@ -157,6 +157,10 @@ while (true)
             Console.WriteLine(Problem2540.GetCommon([1, 2, 3], [2, 4]));
             break;
 
+        case 2574:
+            Console.WriteLine(Problem2574.LeftRightDifference([10, 4, 8, 3]));
+            break;
+
         case 2615:
             Console.WriteLine(Problem2615.Distance([1, 3, 1, 1, 2]));
             break;
