@@ -133,6 +133,10 @@ while (true)
             Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
             break;
 
+        case 2033:
+            Console.WriteLine(Problem2033.MinOperations([[2, 4], [6, 8]], 2));
+            break;
+
         case 2075:
             Console.WriteLine(Problem2075.DecodeCiphertext("iveo    eed   l te   olc", 4));
             break;
@@ -141,8 +145,8 @@ while (true)
             Console.WriteLine(Problem2078.MaxDistance([1, 1, 1, 6, 1, 1, 1]));
             break;
 
-        case 2033:
-            Console.WriteLine(Problem2033.MinOperations([[2, 4], [6, 8]], 2));
+        case 2161:
+            Console.WriteLine(Problem2161.PivotArray([9, 12, 5, 10, 14, 3, 10], 10));
             break;
 
         case 2452:
