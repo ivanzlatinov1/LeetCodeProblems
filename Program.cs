@@ -217,6 +217,10 @@ while (true)
             Console.WriteLine(string.Join(" ", Problem3660.MaxValue([2, 3, 1])));
             break;
 
+        case 3689:
+            Console.WriteLine(Problem3689.MaxTotalValue([1, 3, 2], 2));
+            break;
+
         case 3740:
             Console.WriteLine(Problem3740.MinimumDistance([2, 6, 2, 6, 2, 6, 2, 2, 2]));
             break;
