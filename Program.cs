@@ -145,6 +145,10 @@ while (true)
             Console.WriteLine(Problem2078.MaxDistance([1, 1, 1, 6, 1, 1, 1]));
             break;
 
+        case 2130:
+            Console.WriteLine(Problem2130.PairSum(new(5, new(4, new(2, new(1))))));
+            break;
+
         case 2161:
             Console.WriteLine(Problem2161.PivotArray([9, 12, 5, 10, 14, 3, 10], 10));
             break;
