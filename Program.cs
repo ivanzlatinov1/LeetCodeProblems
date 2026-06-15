@@ -145,6 +145,10 @@ while (true)
             Console.WriteLine(Problem2078.MaxDistance([1, 1, 1, 6, 1, 1, 1]));
             break;
 
+        case 2095:
+            Problem2095.DeleteMiddle(new(1, new(3, new(4, new(7, new(1, new(2, new(6))))))));
+            break;
+
         case 2130:
             Console.WriteLine(Problem2130.PairSum(new(5, new(4, new(2, new(1))))));
             break;
