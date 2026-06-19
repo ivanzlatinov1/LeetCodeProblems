@@ -106,6 +106,10 @@ while (true)
             Console.WriteLine(Problem1665.MinimumEffort([[1, 3], [2, 4], [10, 11], [10, 12], [8, 9]]));
             break;
 
+        case 1732:
+            Console.WriteLine(Problem1732.LargestAltitude([-5, 1, 5, 0, -7]));
+            break;
+
         case 1758:
             Console.WriteLine(Problem1758.MinOperations("1111"));
             break;
