@@ -118,6 +118,10 @@ while (true)
             Console.WriteLine(Problem1784.CheckOnesSegment("1001"));
             break;
 
+        case 1833:
+            Console.WriteLine(Problem1833.MaxIceCream([1, 3, 2, 4, 1], 7));
+            break;
+
         case 1855:
             Console.WriteLine(Problem1855.MaxDistance([55, 30, 5, 4, 2], [100, 20, 10, 10, 5]));
             break;
