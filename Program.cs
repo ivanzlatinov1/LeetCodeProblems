@@ -210,6 +210,10 @@ while (true)
                 [[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2));
             break;
 
+        case 3020:
+            Console.WriteLine(Problem3020.MaximumLength([5, 4, 1, 2, 2]));
+            break;
+
         case 3070:
             Console.WriteLine(Problem3070.CountSubmatrices(
                 [[7, 6, 3], [6, 6, 1]], 18));
