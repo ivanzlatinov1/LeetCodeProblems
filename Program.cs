@@ -141,6 +141,10 @@ while (true)
             ));
             break;
 
+        case 1967:
+            Console.WriteLine(Problem1967.NumOfStrings(["a", "abc", "bc", "d"], "abc"));
+            break;
+
         case 1980:
             Console.WriteLine(Problem1980.FindDifferentBinaryString(["111", "011", "001"]));
             break;
