@@ -261,6 +261,10 @@ while (true)
             Console.WriteLine(Problem3742.MaxPathScore([[0, 1], [2, 0]], 1));
             break;
 
+        case 3754:
+            Console.WriteLine(Problem3754.SumAndMultiply(10203004));
+            break;
+
         case 3761:
             Console.WriteLine(Problem3761.MinMirrorPairDistance([12, 34, 46, 21, 12]));
             break;
