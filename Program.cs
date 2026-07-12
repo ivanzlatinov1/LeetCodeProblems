@@ -90,6 +90,10 @@ while (true)
             Console.WriteLine(Problem1306.CanReach([4, 2, 3, 0, 3, 1, 2], 5));
             break;
 
+        case 1331:
+            Console.WriteLine(Problem1331.ArrayRankTransform([37, 12, 28, 9, 100, 56, 80, 5, 12]));
+            break;
+
         case 1391:
             Console.WriteLine(Problem1391.HasValidPath([[2, 4, 3], [6, 5, 2]]));
             break;
