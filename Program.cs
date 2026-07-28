@@ -240,6 +240,10 @@ while (true)
                 [[0, 1, -1], [1, -2, 3], [2, -3, 4]]));
             break;
 
+        case 3517:
+            Console.WriteLine(Problem3517.SmallestPalindrome("daccad"));
+            break;
+
         case 3612:
             Console.WriteLine(Problem3612.ProcessStr("a#b%*"));
             break;
